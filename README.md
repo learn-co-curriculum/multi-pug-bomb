@@ -1,3 +1,7 @@
+---
+tags: nsoperationqueue,multithreading,advanced
+language: objc
+---
 # Multi-Threading For Speed
 
 So we've done a multi-threading example to just not block the main thread, but let's do one to make things faster.
