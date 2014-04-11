@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8586CD16-1685-40F4-92E3-2DE7F0DED3B6</string>
+	<string>7688DD1E-4175-4780-83FD-9B34AE99D917</string>
 	<key>IDESourceControlProjectName</key>
 	<string>NSOperationQueue</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F911F4D5-2883-409D-9CCB-EF83EBA775F0</key>
+		<key>2713A8A4-05AF-4032-81DF-ED4F9B520EEF</key>
 		<string>ssh://github.com/flatiron-school-students/admin-ios-001.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>lecture_materials/3-24-14/NSOperationQueue/NSOperationQueue.xcworkspace</string>
+	<string>lecture_materials/3-26-14/NSOperationQueue/NSOperationQueue.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F911F4D5-2883-409D-9CCB-EF83EBA775F0</key>
+		<key>2713A8A4-05AF-4032-81DF-ED4F9B520EEF</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F911F4D5-2883-409D-9CCB-EF83EBA775F0</string>
+	<string>2713A8A4-05AF-4032-81DF-ED4F9B520EEF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F911F4D5-2883-409D-9CCB-EF83EBA775F0</string>
+			<string>2713A8A4-05AF-4032-81DF-ED4F9B520EEF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>admin-ios-001</string>
 		</dict>

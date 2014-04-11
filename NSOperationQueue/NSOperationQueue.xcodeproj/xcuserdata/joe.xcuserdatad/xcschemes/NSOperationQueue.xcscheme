@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D83B02C218E07E7900F66BF5"
+               BlueprintIdentifier = "44CE45AD18E31A8700EC361F"
                BuildableName = "NSOperationQueue.app"
                BlueprintName = "NSOperationQueue"
                ReferencedContainer = "container:NSOperationQueue.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D83B02E318E07E7900F66BF5"
+               BlueprintIdentifier = "44CE45CE18E31A8700EC361F"
                BuildableName = "NSOperationQueueTests.xctest"
                BlueprintName = "NSOperationQueueTests"
                ReferencedContainer = "container:NSOperationQueue.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D83B02C218E07E7900F66BF5"
+            BlueprintIdentifier = "44CE45AD18E31A8700EC361F"
             BuildableName = "NSOperationQueue.app"
             BlueprintName = "NSOperationQueue"
             ReferencedContainer = "container:NSOperationQueue.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D83B02C218E07E7900F66BF5"
+            BlueprintIdentifier = "44CE45AD18E31A8700EC361F"
             BuildableName = "NSOperationQueue.app"
             BlueprintName = "NSOperationQueue"
             ReferencedContainer = "container:NSOperationQueue.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D83B02C218E07E7900F66BF5"
+            BlueprintIdentifier = "44CE45AD18E31A8700EC361F"
             BuildableName = "NSOperationQueue.app"
             BlueprintName = "NSOperationQueue"
             ReferencedContainer = "container:NSOperationQueue.xcodeproj">
