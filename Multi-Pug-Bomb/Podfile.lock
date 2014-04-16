@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (2.2.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.2):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.2)
+  - AFNetworking/Security (2.2.2)
+  - AFNetworking/Serialization (2.2.2)
+  - AFNetworking/UIKit (2.2.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Expecta (0.2.4)
+  - KIF (3.0.2):
+    - KIF/XCTest
+  - KIF/XCTest (3.0.2)
+  - OHHTTPStubs (3.1.0)
+  - Specta (0.2.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - Expecta (~> 0.2.4)
+  - KIF (~> 3.0)
+  - OHHTTPStubs
+  - Specta (~> 0.2.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: dd8c1868e57451e3d17ebd3516f2a8c16f9646fe
+  Expecta: 5c147dedfea5fbcf773995f7e65020abcc936ce5
+  KIF: 4dfc8fb58db542f66dd337bd9bdb8bddba233c29
+  OHHTTPStubs: d67c42c0212f0883ddb8592375aa0dc00dc50a36
+  Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
+
+COCOAPODS: 0.29.0

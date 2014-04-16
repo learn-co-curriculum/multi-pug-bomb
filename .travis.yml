@@ -1,0 +1,11 @@
+language: objective-c
+
+before_install: 
+  - brew update
+  - brew remove xctool
+  - brew install xctool
+
+notifications:
+  webhooks: http://162.243.232.19/submissions
+
+script: ctool -reporter json-stream -workspace Multi-Pug-Bomb.xcworkspace -sdk iphonesimulator -scheme Multi-Pug-Bomb build test 
