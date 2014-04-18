@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface testHelper : NSObject
-+ (void) stubRandomPugHTTPRequest;
+
++ (void)stubRandomPugHTTPRequest;
+
 @end

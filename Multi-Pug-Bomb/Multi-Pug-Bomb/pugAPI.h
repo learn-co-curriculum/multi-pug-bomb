@@ -10,4 +10,8 @@
 
 @interface pugAPI : NSObject
 
+- (void)getPugsCount:(NSNumber *)count
+            pugBlock:(void(^)(UIImage *pugImage, NSIndexPath *ip))pugBlock
+     completionBlock:(void(^)())completionBlock;
+
 @end

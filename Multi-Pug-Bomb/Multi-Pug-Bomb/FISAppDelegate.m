@@ -7,6 +7,8 @@
 //
 
 #import "FISAppDelegate.h"
+#import "pugAPI.h"
+
 #import <OHHTTPStubs.h>
 static BOOL isRunningTests(void) __attribute__((const));
 
@@ -15,31 +17,38 @@ static BOOL isRunningTests(void) __attribute__((const));
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-
+    
     /**
      *  This is to stub out the HTTP requests when run as tests.
      */
-
-    if (isRunningTests()) {
+    
+    if (isRunningTests())
+    {
         [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
             return [request.URL.absoluteString isEqualToString:@"http://pugme.herokuapp.com/random"];
         } withStubResponse:^OHHTTPStubsResponse *(NSURLRequest *request) {
             NSString *path = [[NSBundle mainBundle] pathForResource:@"output" ofType:@"json"];
-            OHHTTPStubsResponse *response =[OHHTTPStubsResponse responseWithFileAtPath:path statusCode:200 headers:@{@"Content-Type": @"application/json"}];
+            OHHTTPStubsResponse *response = [OHHTTPStubsResponse responseWithFileAtPath:path statusCode:200 headers:@{@"Content-Type": @"application/json"}];
             return [response requestTime:0.5 responseTime:0.5];
         }];
         [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
             return [request.URL.absoluteString isEqualToString:@"http://24.media.tumblr.com/tumblr_lsvczkC8e01qzgqodo1_500.jpg"];
         } withStubResponse:^OHHTTPStubsResponse *(NSURLRequest *request) {
             NSString *path = [[NSBundle mainBundle] pathForResource:@"pug" ofType:@"jpg"];
-            OHHTTPStubsResponse *response =[OHHTTPStubsResponse responseWithFileAtPath:path statusCode:200 headers:@{@"Content-Type": @"image/jpeg"}];
+            OHHTTPStubsResponse *response = [OHHTTPStubsResponse responseWithFileAtPath:path statusCode:200 headers:@{@"Content-Type": @"image/jpeg"}];
+            
             return response;
         }];
+        
         return YES;
     }
+
     return YES;
+    
+    #pragma clang diagnostic push //suppress warning for extra space due to comments
 }
 
+#pragma clang diagnostic pop
 /**
  *  Checks to see if running as a Test
  *
@@ -48,11 +57,12 @@ static BOOL isRunningTests(void) __attribute__((const));
 
 static BOOL isRunningTests(void)
 {
-    NSDictionary* environment = [[NSProcessInfo processInfo] environment];
-    NSString* injectBundle = environment[@"XCInjectBundle"];
+    NSDictionary *environment = [[NSProcessInfo processInfo] environment];
+    NSString *injectBundle = environment[@"XCInjectBundle"];
+    
     return [[injectBundle pathExtension] isEqualToString:@"xctest"];
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -61,7 +71,7 @@ static BOOL isRunningTests(void)
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

@@ -15,8 +15,10 @@
     UIImage *imageB = object;
     NSData *imageAData = UIImagePNGRepresentation(self);
     NSData *imageBData = UIImagePNGRepresentation(imageB);
+    
     return [imageAData isEqual:imageBData];
 }
+
 @end
 
 EXPMatcherImplementationBegin(containImageData, (void)) {
@@ -31,7 +33,8 @@ EXPMatcherImplementationBegin(containImageData, (void)) {
     });
 
     failureMessageForTo(^NSString *{
-        if(actualIsNil)
+       
+        if (actualIsNil)
         {
             return @"The actual value is nil/null";
         }
@@ -40,13 +43,15 @@ EXPMatcherImplementationBegin(containImageData, (void)) {
                 stringWithFormat:@"expected actual to contain data, got an empty object"];
     });
 
-    failureMessageForNotTo(^NSString * {
-        if(actualIsNil)
+    failureMessageForNotTo(^NSString *{
+        
+        if (actualIsNil)
         {
             return @"The actual value is nil/null";
         }
 
-        return [NSString stringWithFormat:@"Expected actual to contain no data, got an object with %lu bytes",(unsigned long)[actualData length]];
+        return [NSString stringWithFormat:@"Expected actual to contain no data, got an object with %lu bytes", (unsigned long)[actualData length]];
     });
 }
+
 EXPMatcherImplementationEnd

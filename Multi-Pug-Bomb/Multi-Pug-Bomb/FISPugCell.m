@@ -13,18 +13,23 @@
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
+    
+    if (self)
+    {
         // Initialization code
+        
 
     }
+    
     return self;
 }
 
 - (void)awakeFromNib
 {
     // Initialization code
-        UIImage *placeholderImage = [UIImage imageNamed:@"placeholder"];
-        self.pugImageView.image=placeholderImage;
+    NSLog(@"ASDF");
+    UIImage *placeholderImage = [UIImage imageNamed:@"placeholder"];
+    self.pugImageView.image = placeholderImage;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

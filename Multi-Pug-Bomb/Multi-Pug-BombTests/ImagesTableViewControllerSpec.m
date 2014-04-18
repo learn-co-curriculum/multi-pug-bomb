@@ -34,7 +34,7 @@ describe(@"ImagesTableViewController", ^{
     describe(@"Pug Cell", ^{
         __block FISPugCell *pugCell;
         beforeAll(^{
-            pugCell= [pugListTableView dequeueReusableCellWithIdentifier:@"pugCell"];
+            pugCell = [pugListTableView dequeueReusableCellWithIdentifier:@"pugCell"];
         });
         it(@"Should have an Image View name pugImageView", ^{
             expect(pugCell).to.respondTo(@selector(pugImageView));

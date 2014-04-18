@@ -10,14 +10,16 @@
 #import "OHHTTPStubs.h"
 
 @implementation testHelper
+
 + (void)stubRandomPugHTTPRequest
 {
     [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest *request) {
         return [request.URL.absoluteString isEqualToString:@"http://pugme.herokuapp.com/random"];
     } withStubResponse:^OHHTTPStubsResponse *(NSURLRequest *request) {
-        OHHTTPStubsResponse *response =[OHHTTPStubsResponse responseWithFileAtPath:OHPathForFileInBundle(@"output.json", nil) statusCode:200 headers:@{@"Content-Type": @"application/json"}];
+        OHHTTPStubsResponse *response = [OHHTTPStubsResponse responseWithFileAtPath:OHPathForFileInBundle(@"output.json", nil) statusCode:200 headers:@{@"Content-Type": @"application/json"}];
         return response;
     }];
 
 }
+
 @end
