@@ -22,4 +22,4 @@ So we've done a multi-threading example to just not block the main thread, but l
   [myOperationQueue setMaxConcurrentOperationCount:10];
   ```
 
-<a href='https://learn.co/lessons/multi-pug-bomb' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/multi-pug-bomb' title='Multi-Threading For Speed'>Multi-Threading For Speed</a> on Learn.co and start learning to code for free.</p>
